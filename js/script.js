@@ -9,6 +9,10 @@ let ticketPrice = tripLength * 0.21;
 let discountsApplied = 0;
 let printedPercentage = '0&percnt;'
 
+    if (isNaN(tripLength) || isNaN(userAge)) {
+        alert ('Metti un numero SCELLERATO! ...o ti veniamo a cercare ;)');
+    }
+
     if (userAge < 18) {
         discountsApplied = 20 / 100;
         printedPercentage = '20&percnt;';
