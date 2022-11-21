@@ -21,12 +21,10 @@ let printedPercentage = '0&percnt;'
 console.log(ticketPrice);
 console.log(discountsApplied);
 
-
 let finalTicketPrice = ticketPrice - (ticketPrice * discountsApplied);
 
-
-document.getElementById('discountsApplied').innerHTML = printedPercentage;
+document.getElementById('ticketPrice').innerHTML = (tripLength * 0.21).toFixed(2) + '&euro;';
 
 document.getElementById('finalTicketPrice').innerHTML = finalTicketPrice.toFixed(2) + '&euro;';
 
-document.getElementById('ticketPrice').innerHTML = (tripLength * 0.21).toFixed(2) + '&euro;';
+document.getElementById('discountsApplied').innerHTML = printedPercentage;
