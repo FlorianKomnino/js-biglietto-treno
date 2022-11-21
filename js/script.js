@@ -10,14 +10,23 @@ let dicountsApplied
 
     if (userAge < 18) {
         discountsApplied = 20 / 100;
+        document.getElementById('discountsApplied').innerHTML = '20&percnt;';
     } 
     else if (userAge >= 65) {
         discountsApplied = 40 / 100;
+        document.getElementById('discountsApplied').innerHTML = '40&percnt;';
     } 
     else {
         discountsApplied = 1;
+        document.getElementById('discountsApplied').innerHTML = '0&percnt;';
 }
 
+console.log(ticketPrice);
+console.log(discountsApplied);
 
 
-document.getElementById('ticketPrice').innerHTML = tripLength * 0.21;
+let finalTicketPrice = ticketPrice * dicountsApplied;
+
+document.getElementById('finalTicketPrice').innerHTML = finalTicketPrice.toFixed(2) + '&euro;';
+
+document.getElementById('ticketPrice').innerHTML = (tripLength * 0.21).toFixed(2) + '&euro;';
