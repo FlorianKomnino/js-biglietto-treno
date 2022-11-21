@@ -3,6 +3,10 @@
     height: 200px;
 }
 
+.custom-align-center {
+    align-items: center;
+}
+
 /* Main selectors */
 main {
     height: 800px;
