@@ -17,7 +17,7 @@ let dicountsApplied
         document.getElementById('discountsApplied').innerHTML = '40&percnt;';
     } 
     else {
-        discountsApplied = 1;
+        discountsApplied = 0;
         document.getElementById('discountsApplied').innerHTML = '0&percnt;';
 }
 
@@ -25,7 +25,7 @@ console.log(ticketPrice);
 console.log(discountsApplied);
 
 
-let finalTicketPrice = ticketPrice * dicountsApplied;
+let finalTicketPrice = ticketPrice - (ticketPrice * discountsApplied);
 
 document.getElementById('finalTicketPrice').innerHTML = finalTicketPrice.toFixed(2) + '&euro;';
 
