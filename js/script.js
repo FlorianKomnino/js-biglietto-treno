@@ -6,7 +6,8 @@ let tripLength = prompt ('Inserisci la lunghezza del tuo viaggio in kilometri');
 let userAge = prompt ('Inserisci la tua età');
 
 let ticketPrice = tripLength * 0.21;
-let dicountsApplied
+let dicountsApplied = 1;
+document.getElementById('discountsApplied').innerHTML = '0&percnt;';
 
     if (userAge < 18) {
         discountsApplied = 20 / 100;
@@ -15,11 +16,7 @@ let dicountsApplied
     else if (userAge >= 65) {
         discountsApplied = 40 / 100;
         document.getElementById('discountsApplied').innerHTML = '40&percnt;';
-    } 
-    else {
-        discountsApplied = 0;
-        document.getElementById('discountsApplied').innerHTML = '0&percnt;';
-}
+    }
 
 console.log(ticketPrice);
 console.log(discountsApplied);
