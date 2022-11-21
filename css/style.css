@@ -1,0 +1,11 @@
+/* General selectors */
+.h-200px {
+    height: 200px;
+}
+
+/* Main selectors */
+main {
+    height: 800px;
+    width: 100%;
+    background-color: brown;
+}
