@@ -2,8 +2,8 @@ console.log('Hello World!');
 
 let pricePerKm = 0.21;
 
-let tripLength = prompt ('Inserisci la lunghezza del tuo viaggio in kilometri');
-let userAge = prompt ('Inserisci la tua età');
+let tripLength = prompt (parseInt('Inserisci la lunghezza del tuo viaggio in kilometri'));
+let userAge = prompt (parseInt('Inserisci la tua età'));
 
 let ticketPrice = tripLength * 0.21;
 let discountsApplied = 0;
